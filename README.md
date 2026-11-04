@@ -3,8 +3,8 @@
 A 3D-printed, tendon-driven robotic hand that mirrors your hand in real time from a single webcam. No gloves, no markers, no manual input: you move your hand in front of the camera and the bionic hand follows.
 
 <p align="center">
-  <img src="media/hand.jpg" width="45%" />
-  <img src="media/electronics.jpg" width="45%" />
+  <img src="media/hand_1.jpeg" width="45%" />
+  <img src="media/hand_2.jpeg" width="45%" />
 </p>
 
 The laptop does the vision work and the STM32 does the actuation. There are two interchangeable control backends, a lightweight MediaPipe-only one and a heavier MediaPipe + [HaMeR](https://github.com/geopavlakos/hamer) one that reconstructs a full 3D hand mesh. Both send the same serial packets, so the same firmware runs either one.
@@ -37,9 +37,16 @@ flowchart LR
 I built the MediaPipe version first, then moved to HaMeR because MediaPipe struggles with abduction and adduction (the lateral spread of the fingers), where HaMeR is clearly better.
 
 <p align="center">
-  <img src="media/abduction_least.png" width="45%" />
-  <img src="media/abduction_most.png" width="45%" />
+  <img src="media/mp_hands_abd1.jpeg" width="45%" />
+  <img src="media/mp_hands_abd2.jpeg" width="45%" />
 </p>
+mediapie hands
+
+<p align="center">
+  <img src="media/hamer_abd1.jpeg" width="45%" />
+  <img src="media/hamer_abd2.jpeg" width="45%" />
+</p>
+Hamer
 
 *Computed angles at the least and most abducted hand pose.*
 
@@ -116,6 +123,11 @@ The firmware runs on a BluePill (STM32F103C8T6) and controls 11 servos.
 | Wrist | PA8 | - | - |
 
 A separate bench-test sketch in `firmware/manual_test/` drives the servos by hand for initial bring-up and range configuration, without any vision running.
+
+<p align="center">
+  <img src="media/hand_elec_1.webp" width="45%" />
+  <img src="media/hand_elec_2.jpeg" width="45%" />
+</p>
 
 ## Hardware
 
