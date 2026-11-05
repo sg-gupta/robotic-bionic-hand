@@ -3,7 +3,7 @@
 A 3D-printed, tendon-driven robotic hand that mirrors your hand in real time from a single webcam. No gloves, no markers, no manual input: you move your hand in front of the camera and the bionic hand follows.
 
 <p align="center">
-  <img src="media/hand_1.jpeg" width="45%" />
+  <img src="media/hand_1.jpeg" width="25%" />
   <img src="media/hand_2.jpeg" width="45%" />
 </p>
 
