@@ -9,6 +9,10 @@ A 3D-printed, tendon-driven robotic hand that mirrors your hand in real time fro
 
 The laptop does the vision work and the STM32 does the actuation. There are two interchangeable control backends, a lightweight MediaPipe-only one and a heavier MediaPipe + [HaMeR](https://github.com/geopavlakos/hamer) one that reconstructs a full 3D hand mesh. Both send the same serial packets, so the same firmware runs either one.
 
+<p align="center">
+  <img src="media/hand_demo.gif" width="55%" />
+</p>
+
 ## How it works
 
 ```mermaid
