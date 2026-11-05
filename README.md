@@ -129,8 +129,8 @@ The firmware runs on a BluePill (STM32F103C8T6) and controls 11 servos.
 A separate bench-test sketch in `firmware/manual_test/` drives the servos by hand for initial bring-up and range configuration, without any vision running.
 
 <p align="center">
-  <img src="media/hand_elec_1.webp" width="45%" />
-  <img src="media/hand_elec_2.jpeg" width="45%" />
+  <img src="media/hand_elec_1.webp" width="45%" style="transform: scaleX(-1)"/>
+  <img src="media/hand_elec_2.jpeg" width="45%" style="transform: scaleY(-1)"/>
 </p>
 
 ## Hardware
